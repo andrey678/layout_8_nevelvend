@@ -33,15 +33,23 @@ $(document).ready(function(){
 
 let rightButton = document.querySelector('.main__link:last-child');
 const mediaQuery = window.matchMedia('(max-width: 450px)');
-console.log(mediaQuery);
+
 
 if (mediaQuery.matches){
   rightButton.innerHTML = `Подробнее`;
 } else {
   rightButton.innerHTML = `Узнать больше`;
 };
-console.log(rightButton);
 
+// CHANGE THIRD HEADING IN SECTION ABOUT
+let thirdHeading = document.querySelector('.about__block-bottom > h3');
+const mediaquery = window.matchMedia('(max-width: 450px)');
+
+if (mediaQuery.matches){
+  thirdHeading.innerHTML = `Экологичный`;
+} else {
+  thirdHeading.innerHTML = `От производителя`;
+};
 // STIRRER
 
 var theWindow = $(window); 
@@ -52,15 +60,15 @@ var animDuration = winHeight / 2;
 
 var animData = { 
 
-container: document.getElementById('lottie-three'), 
+  container: document.getElementById('lottie-three'), 
 
-renderer: 'svg', 
+  renderer: 'svg', 
 
-loop: false, 
+  loop: false, 
 
-autoplay: false, 
+  autoplay: false, 
 
-path: 'json/MixerSequence.json' 
+  path: 'img/json/MixerSequence.json' 
 
 }; 
 
@@ -68,31 +76,31 @@ var anim = bodymovin.loadAnimation(animData);
 
 $( window ).scroll(function() { 
 
-animatebodymovin(animDuration, anim); 
+  animatebodymovin(animDuration, anim); 
 
 }); 
 
 function animatebodymovin(duration, animObject) { 
 
-var scrollPosition = theWindow.scrollTop(); 
+  var scrollPosition = theWindow.scrollTop(); 
 
-var maxFrames = animObject.totalFrames; 
+  var maxFrames = animObject.totalFrames; 
 
-var frame = (maxFrames / 100) * (scrollPosition / (duration / 100)); 
+  var frame = (maxFrames / 100) * (scrollPosition / (duration / 100)); 
 
-animObject.goToAndStop(frame, true); 
+  animObject.goToAndStop(frame, true); 
 
 } 
 
 anim.addEventListener("enterFrame", function (animation) { 
 
-if (animation.currentTime > (anim.totalFrames - 1)) { 
+  if (animation.currentTime > (anim.totalFrames - 1)) { 
 
-animObject.pause(); 
+    // animObject.pause(); 
 
-//anim.pause(); 
+  anim.pause(); 
 
-} 
+  } 
 
 }); 
 

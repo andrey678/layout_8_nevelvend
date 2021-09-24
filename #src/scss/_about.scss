@@ -1,0 +1,169 @@
+.about {
+	background: url('../img/About/about_bg.png') 0 0 / cover no-repeat;
+	height: 100vh;
+	padding: 29px 0 70px 0;
+	/* .about__inner */
+	&__inner {
+	}
+	
+
+	/* .about__block-title */
+	&__block-title {
+		font-family: 'Rubik',sans-serif;
+		font-weight: bold;
+		font-size: 64px;
+		line-height: 76px;
+		color: #EAEAEA;
+		margin:0 0 20px 0;
+	}
+	/* .about__block-text */
+	&__block-text {
+		font-family: 'NotoSans', sans-serif;
+		font-size: 22px;
+		line-height: 30px;
+		letter-spacing: 0.03em;
+		color: #EAEAEA;
+		max-width: 689px;
+	}
+	//GENERAL STYLES FOR ARROWS AND TARGETS
+	&__block-top,
+	&__block-middle,
+	&__block-bottom{
+		
+		&:before{
+			content: '';
+			background: url('../img/About/about_target.svg') no-repeat;
+			display: block;
+			width: 453px;
+			height: 453px;
+			position:absolute;
+			
+
+		}
+		&:after{
+			content: '';
+			background: url('../img/About/about_arrow.svg') no-repeat;
+			display: block;
+			width: 8px;
+			height: 129px;
+			position:absolute;
+			bottom:-182px;
+			left: 220px;
+		}
+	}
+		/* .about__block-top */
+	&__block-top {
+		margin: 0 0 210px 0;
+		position:relative;
+		&:before{
+			bottom: -80px;
+
+		}
+		
+	}
+	/* .about__block-middle */
+	&__block-middle {
+		margin: 0 0 210px 0;
+		position:relative;
+		&:before{
+			bottom: -75px;
+			background: url('../img/About/about_ellipse_target.svg') no-repeat;
+			height: 305px;
+		}
+	}
+	/* .about__block-bottom */
+	&__block-bottom {
+		position:relative;
+		&:before{
+			top: -55px;
+		}
+		&:after{
+			display: none;
+			
+		}
+	}
+}
+
+@media (max-width: 450px){
+	.about {
+		background:  url('../img/About/about_bg.png') 0 0 / 0% no-repeat, #2E2E2E;
+		height: 100vh;
+		padding: 51px 0 82px 0;
+		/* .about__inner */
+		&__inner {
+		}
+		
+		/* .about__block-title */
+		&__block-title {
+			font-family: 'Rubik',sans-serif;
+			font-weight: bold;
+			font-size: 36px;
+			line-height: 43px;
+			text-align: center;
+			color: #EAEAEA;
+			margin: 0 0 10px 0;
+		}
+		/* .about__block-text */
+		&__block-text {
+			font-family: 'NotoSans',sans-serif;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 21px;
+			text-align: center;
+			color: #FFFFFF;
+		}
+		//GENERAL STYLES FOR SMALL ARROWS AND TARGETS
+	&__block-top,
+	&__block-middle,
+	&__block-bottom{
+		
+		&:before{
+			content: '';
+			background: url('../img/About/about_target_small.svg') no-repeat;
+			display: block;
+			width: 234px;
+			height: 234px;
+			position:absolute;
+			left: 39px;
+			bottom: -49px;
+			
+
+		}
+		&:after{
+			content: '';
+			background: url('../img/About/about_arrow_small.svg') no-repeat;
+			display: block;
+			width: 4px;
+			height: 46px;
+			position:absolute;
+			left: 153px;
+			bottom: -78px;
+		}
+	}
+		/* .about__block-top */
+		&__block-top {
+			position: relative;
+			margin: 0 0 112px 0;
+			
+		}
+		/* .about__block-middle */
+		&__block-middle {
+			position: relative;
+			margin: 0 0 116px 0;
+			
+
+		}
+		/* .about__block-bottom */
+		&__block-bottom {
+			// & > .about__block-title{
+			// 	font-size: 32px;
+			// }
+			&:after{
+				display: none;
+			}
+		}
+	}
+	
+
+}
