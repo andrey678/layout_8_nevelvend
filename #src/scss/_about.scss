@@ -1,6 +1,6 @@
 .about {
 	background: url('../img/About/about_bg.png') 0 0 / cover no-repeat;
-	height: 100vh;
+	min-height: 100vh;
 	padding: 29px 0 70px 0;
 	/* .about__inner */
 	&__inner {
