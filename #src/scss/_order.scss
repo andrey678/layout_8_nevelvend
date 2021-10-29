@@ -85,12 +85,17 @@
 		line-height: 42px;
 		letter-spacing: 0.03em;
 		color: #EAEAEA;
+		transition:all 0.4s ease 0s;
+		&:hover{
+			cursor:pointer;
+		}
 
 	}
 	/* .tabs__item_active */
 	&__item_active {
 		color: #E8CCA2;
 		border-bottom: 1px solid rgba(138, 138, 138, 1);
+		transition:all 0.4s ease 0s;
 	}
 	/* .tabs__content-inner */
 	&__content-inner {
@@ -554,7 +559,7 @@
 
 @media (max-width: 450px) {
 	.order {
-		background: url('../img/Order/order_bg.png') 0 0 / 0% no-repeat, #2E2E2E;;
+		background: url('../img/Order/order_bg.png') 0 0 / 0% no-repeat, #2E2E2E;
 		height: 100vh;
 		padding: 87px 0 69px 0;
 	/* .order__block-top */

@@ -275,7 +275,7 @@ function popupClose(popupActive){
     popupActive.classList.remove('open');
 }
 
-// Показ модального окна после валидации
+// Показ модального окна после валидации orderForm
 const mainOrderForm = document.forms.orderForm;
 const orderFormName = mainOrderForm.nameInput;
 const orderFormPhone = mainOrderForm.phoneInput;
@@ -294,7 +294,6 @@ function checkInputs(event){
 }
 //Закрытие по кнопке "ожидаю звонка"
 popupLinkWaiting.addEventListener('click', function(e){
-  console.log(successPopup.classList);
   successPopup.classList.remove('open');
   e.preventDefault();
 });
@@ -304,8 +303,90 @@ successPopup.addEventListener('click',function(e){
               successPopup.classList.remove('open');
             }
 });
-// Закрытие по пустой области вокруг Success Popup
 
+// Показ модального окна после валидации offerForm
+const offerForm = document.forms.offerForm;
+console.log(offerForm);
+const offerFormName = offerForm.nameBidInput;
+console.log(offerFormName);
+const offerFormPhone = offerForm.phoneBidInput;
+console.log(offerFormPhone);
+const offerFormEmail = offerForm.emailBidInput;
+console.log(offerFormEmail);
+
+const offerButton = document.querySelector('.bid__btn');
+
+offerForm.addEventListener('submit', formSend);
+
+
+async function formSend(event){
+    event.preventDefault();
+
+    let error = formValidate(offerForm);
+    let formData = new FormData(offerForm);
+    if(error === 0){
+            offerForm.classList.add('_sending');
+            let response = await fetch ('sendmail.php',{
+              method: 'POST',
+              body: formData
+            });
+            if(response.ok){
+              let result = await response.json();
+              alert(result.message);
+              offerForm.reset();
+              offerForm.classList.remove('_sending');
+              successPopup.classList.remove('open');//ПРОВЕРИТЬ ОТКРЫТИЕ ПОПАПА
+            } else {
+              alert('Ошибка');
+              offerForm.classList.remove('_sending');
+            }
+        } else {
+            alert('Заполните обязательные поля')
+        }
+}
+
+function formValidate(form){
+    let error = 0;
+    let formReq = document.querySelectorAll('._req');
+
+    for (let index = 0; index < formReq.length; index++) {
+            const input = formReq[index];
+            formRemoveError(input);
+
+            if(input.classList.contains('_email')){
+                if(emailTest(input)){
+                  formAddError(input);
+                  error++;
+                }
+            } else if(input.getAttribute('type') === 'checkbox' && input.checked === false){
+                formAddError(input);
+                error++;
+            } else {
+                if (input.value === ''){
+                formAddError(input);
+                error++;
+            }
+         } 
+    }
+    return error;
+
+};
+
+function formAddError(input){
+  input.parentElement.classList.add('_error');
+  input.classList.add('_error');
+}
+function formRemoveError(input){
+  input.parentElement.classList.remove('_error');
+  input.classList.remove('_error');
+}
+
+//Функция теста email 
+function emailTest(input) { 
+
+  return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value); 
+
+}
 // //Блокировка скролла
 // function bodyLock(){
 //   constPaddingValue = window.innerWidth - document.querySelector('.container').offsetWidth + 'px';
