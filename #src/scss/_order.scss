@@ -2,6 +2,7 @@
 	background: url('../img/Order/order_bg.png') 0 0 / cover no-repeat;
 	height: 100vh;
 	padding: 101px 0 69px 0;
+	
 
 	/* .order__block-top */
 	&__block-top {
@@ -557,6 +558,469 @@
 // 	overflow: hidden;
 // }
 
+@media (max-width: 1600px) {
+	.order {
+	/* .order__block-top */
+	&__block-top {
+		margin: 0 0 45px 0;
+	}
+	/* .order__title */
+	&__title {
+		font-size: 58px;
+		line-height: 70px;
+		margin: 0 0 30px 0;
+	}
+		/* .order__subtitle */
+	&__subtitle {
+	}
+	/* .order__text */
+	&__text {
+		font-size: 23px;
+		line-height: 32px;
+		max-width: 689px;
+	}
+	/* .order__block-middle */
+	&__block-middle {
+		margin: 0 0 55px 0;
+	}
+	/* .order__tabs-inner */
+	&__tabs-inner {
+	}
+	/* .order__tabs */
+	&__tabs {
+	}
+	/* .order__block-bottom */
+	&__block-bottom {
+		max-width: 1076px;
+		margin: 0 0 50px 0;
+	}
+	/* .order__calc-inner */
+	&__calc-inner {
+	}
+	/* .order__special-price */
+	&__special-price {
+	}
+	/* .order__popup */
+	&__popup {
+	}
+}
+.container {
+}
+.tabs {
+	/* .tabs__items */
+	&__items {
+	}
+	/* .tabs__item */
+	&__item {
+		&:hover{
+		}
+	}
+	/* .tabs__item_active */
+	&__item_active {
+	}
+	/* .tabs__content-inner */
+	&__content-inner {
+	}
+	/* .tabs__content */
+	&__content {
+	}
+	/* .tabs__content_active */
+	&__content_active {
+		&::-webkit-scrollbar{
+		}
+		&::-webkit-scrollbar-thumb{
+		}
+	}
+	/* .tabs__content-text */
+	&__content-text {
+	}
+}
+
+.calc {
+	/* .calc__boxes */
+	&__boxes {
+	}
+	/* .calc__box-small */
+	&__box-small {
+		margin: 0 0 0 0;
+	}
+	/* .calc__divider */
+	&__divider {
+		margin: 0 40px 0 0;
+	}
+	/* .calc__box-large */
+	&__box-large {
+	}
+	/* .calc__total */
+	&__total {
+	}
+	/* .calc__total-block */
+	&__total-block {
+	}
+	/* .calc__total-label */
+	&__total-label {
+	}
+	/* .calc__total-output */
+	&__total-output {
+	}
+	/* .calc__btn */
+	&__btn {
+		&:hover{
+		}
+		&:active{
+		}
+	}
+
+}
+.box {
+	/* .box__icon */
+	&__icon {
+	}
+	/* .box__items-amount */
+	&__items-amount {
+	}
+	/* .box__quantity */
+	&__quantity {
+	}
+	/* .box__label */
+	&__label {
+	}
+	/* .box__button-minus */
+	&__button-minus {
+	}
+	/* .box__input-group */
+	&__input-group {
+	}
+	/* .box__input */
+	&__input {
+	}
+	/* .box__button-plus */
+	&__button-plus {
+	}
+	/* .box__price */
+	&__price {
+	}
+	/* .box__output */
+	&__output {
+	}
+}
+
+.popup {
+	&.open{
+	}
+	&.open .popup__content{
+	}
+	/* .popup__area */
+	&__area {
+	}
+	/* .popup__body */
+	&__body {
+	}
+	/* .popup__content */
+	&__content {
+	}
+	/* .popup__content_success */
+	&__content_success {
+	}
+	/* .popup__content_privacy-policy */
+	&__content_privacy-policy {
+	}
+	/* .popup__close */
+	&__close {
+	}
+	/* .popup__title */
+	&__title {
+	}
+	/* .popup__text */
+	&__text {
+	}
+	/* .popup__form */
+	&__form {
+	}
+	/* .popup__link-waiting */
+	&__link-waiting {
+		&:hover{
+		}
+	}
+	/* .popup__block */
+	&__block {
+	}
+}
+
+.form {
+	
+	/* .form__row */
+	&__row {
+	}
+	/* .form__input */
+	&__input {
+	}
+	/* .form__message */
+	&__message {
+	}
+	/* .form__text */
+	&__text {
+	}
+	/* .form__link */
+	&__link {
+	}
+		/* .form__btn */
+	&__btn {
+		&:hover{
+		}
+	}
+	/* .form__btn-link */
+	&__btn-link {
+	}
+}
+
+.block {
+
+	/* .block__item */
+	&__item {
+	}
+	/* .block__title */
+	&__title {
+		&:after{
+		}
+		&.active:after{
+		}
+	}
+	/* .block__text */
+	&__text {
+		& p {
+		}
+		& p:last-child{
+		}
+	}
+}
+}
+@media (max-width: 1536px) {
+		.order {
+			padding: 80px 0 0 0;
+	/* .order__block-top */
+	&__block-top {
+	}
+	/* .order__title */
+	&__title {
+	}
+		/* .order__subtitle */
+	&__subtitle {
+	}
+	/* .order__text */
+	&__text {
+	}
+	/* .order__block-middle */
+	&__block-middle {
+	}
+	/* .order__tabs-inner */
+	&__tabs-inner {
+	}
+	/* .order__tabs */
+	&__tabs {
+	}
+	/* .order__block-bottom */
+	&__block-bottom {
+	}
+	/* .order__calc-inner */
+	&__calc-inner {
+	}
+	/* .order__special-price */
+	&__special-price {
+	}
+	/* .order__popup */
+	&__popup {
+	}
+}
+.container {
+}
+.tabs {
+	/* .tabs__items */
+	&__items {
+	}
+	/* .tabs__item */
+	&__item {
+		&:hover{
+		}
+	}
+	/* .tabs__item_active */
+	&__item_active {
+	}
+	/* .tabs__content-inner */
+	&__content-inner {
+	}
+	/* .tabs__content */
+	&__content {
+	}
+	/* .tabs__content_active */
+	&__content_active {
+		&::-webkit-scrollbar{
+		}
+		&::-webkit-scrollbar-thumb{
+		}
+	}
+	/* .tabs__content-text */
+	&__content-text {
+	}
+}
+
+.calc {
+	/* .calc__boxes */
+	&__boxes {
+	}
+	/* .calc__box-small */
+	&__box-small {
+	}
+	/* .calc__divider */
+	&__divider {
+	}
+	/* .calc__box-large */
+	&__box-large {
+	}
+	/* .calc__total */
+	&__total {
+	}
+	/* .calc__total-block */
+	&__total-block {
+	}
+	/* .calc__total-label */
+	&__total-label {
+	}
+	/* .calc__total-output */
+	&__total-output {
+	}
+	/* .calc__btn */
+	&__btn {
+		&:hover{
+		}
+		&:active{
+		}
+	}
+
+}
+.box {
+	/* .box__icon */
+	&__icon {
+	}
+	/* .box__items-amount */
+	&__items-amount {
+	}
+	/* .box__quantity */
+	&__quantity {
+	}
+	/* .box__label */
+	&__label {
+	}
+	/* .box__button-minus */
+	&__button-minus {
+	}
+	/* .box__input-group */
+	&__input-group {
+	}
+	/* .box__input */
+	&__input {
+	}
+	/* .box__button-plus */
+	&__button-plus {
+	}
+	/* .box__price */
+	&__price {
+	}
+	/* .box__output */
+	&__output {
+	}
+}
+
+.popup {
+	&.open{
+	}
+	&.open .popup__content{
+	}
+	/* .popup__area */
+	&__area {
+	}
+	/* .popup__body */
+	&__body {
+	}
+	/* .popup__content */
+	&__content {
+	}
+	/* .popup__content_success */
+	&__content_success {
+	}
+	/* .popup__content_privacy-policy */
+	&__content_privacy-policy {
+	}
+	/* .popup__close */
+	&__close {
+	}
+	/* .popup__title */
+	&__title {
+	}
+	/* .popup__text */
+	&__text {
+	}
+	/* .popup__form */
+	&__form {
+	}
+	/* .popup__link-waiting */
+	&__link-waiting {
+		&:hover{
+		}
+	}
+	/* .popup__block */
+	&__block {
+	}
+}
+
+.form {
+	
+	/* .form__row */
+	&__row {
+	}
+	/* .form__input */
+	&__input {
+	}
+	/* .form__message */
+	&__message {
+	}
+	/* .form__text */
+	&__text {
+	}
+	/* .form__link */
+	&__link {
+	}
+		/* .form__btn */
+	&__btn {
+		&:hover{
+		}
+	}
+	/* .form__btn-link */
+	&__btn-link {
+	}
+}
+
+.block {
+
+	/* .block__item */
+	&__item {
+	}
+	/* .block__title */
+	&__title {
+		&:after{
+		}
+		&.active:after{
+		}
+	}
+	/* .block__text */
+	&__text {
+		& p {
+		}
+		& p:last-child{
+		}
+	}
+}
+}
 @media (max-width: 450px) {
 	.order {
 		background: url('../img/Order/order_bg.png') 0 0 / 0% no-repeat, #2E2E2E;

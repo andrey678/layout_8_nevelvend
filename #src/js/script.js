@@ -42,7 +42,7 @@ if (mediaQuery.matches){
 };
 
 // CHANGE THIRD HEADING IN SECTION ABOUT
-let thirdHeading = document.querySelector('.about__block-bottom > h3');
+let thirdHeading = document.querySelector('.about__block-inner_bottom > h3');
 
 
 if (mediaQuery.matches){
@@ -513,7 +513,7 @@ anim.addEventListener("enterFrame", function (animation) {
 // ==============================================================================
 // var animData = {
 //   container: document.getElementById('lottie-three'),
-//   path: 'json/MixerSequence.json',
+//   path: 'img/json/MixerSequence.json',
 //   renderer: 'svg',
 //   loop: false,
 //   autoplay: false,
@@ -521,10 +521,10 @@ anim.addEventListener("enterFrame", function (animation) {
 // }, animScroll, tl;
 
 
-// var animScroll = bodymovin.loadAnimation(animData)
+// var animScroll = bodymovin.loadAnimation(animData);
 
 
-// animScroll.addEventListener('DOMLoaded', function () {
+// animScroll.addEventListener('DOMContentLoaded', function () {
 //   tl = new TimelineMax({repeat: 0})
 //   tl.to({frame: 0}, 1, {
 //     frame: animScroll.totalFrames-1,
@@ -548,3 +548,5 @@ anim.addEventListener("enterFrame", function (animation) {
 //    // $("#lottie-three svg").attr('viewBox','0 0 400 1240');
 //    // $("#lottie-three svg").attr('viewBox','0 0 300 1140');
 // })
+
+console.log(window.innerWidth);
