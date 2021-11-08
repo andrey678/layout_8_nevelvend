@@ -2206,27 +2206,47 @@ h6 {
     /* .about__inner */
     /* .about__block-title */
     /* .about__block-text */
+    /* .about__block */
+    /* .about__block-inner */
+    /* .about__block-svg */
+    /* .about__block-svg_top */
+    /* .about__block-inner_top */
+    /* .about__block-svg_middle */
+    /* .about__block-inner_middle */
+    /* .about__block-svg_bottom */
+    /* .about__block-inner_bottom */
+    /* .about__block-arrow */
+    /* .about__block-arrow_top */
+    /* .about__block-arrow_middle */
     /* .about__block-top */
     /* .about__block-middle */
     /* .about__block-bottom */
   }
 
   .about__block-title {
-    font-family: 'Rubik',sans-serif;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 76px;
-    color: #EAEAEA;
-    margin: 0 0 20px 0;
+    font-size: 52px;
+    line-height: 64px;
   }
 
   .about__block-text {
-    font-family: 'NotoSans', sans-serif;
-    font-size: 22px;
-    line-height: 30px;
-    letter-spacing: 0.03em;
-    color: #EAEAEA;
-    max-width: 689px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .about__block-svg {
+    width: 330px;
+  }
+
+  .about__block-arrow_top {
+    top: 175px;
+    left: 163px;
+    height: 100px;
+  }
+
+  .about__block-arrow_middle {
+    top: 130px;
+    left: 163px;
+    height: 100px;
   }
 }
 

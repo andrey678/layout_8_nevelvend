@@ -374,89 +374,79 @@
 }
 @media (max-width:1440px) {
 	.about {
-		// padding: 30px 0;
 	/* .about__inner */
 	&__inner {
 	}
-	
-
 	/* .about__block-title */
 	&__block-title {
-		font-family: 'Rubik',sans-serif;
-		font-weight: bold;
-		font-size: 64px;
-		line-height: 76px;
-		color: #EAEAEA;
-		margin:0 0 20px 0;
+		font-size: 52px;
+		line-height: 64px;
 	}
 	/* .about__block-text */
 	&__block-text {
-		font-family: 'NotoSans', sans-serif;
-		font-size: 22px;
-		line-height: 30px;
-		letter-spacing: 0.03em;
-		color: #EAEAEA;
-		max-width: 689px;
+		font-size: 20px;
+		line-height: 26px;
 	}
 	//GENERAL STYLES FOR ARROWS AND TARGETS
-	&__block-top,
-	&__block-middle,
-	&__block-bottom{
-		
-		&:before{
-			// content: '';
-			// background: url('../img/About/about_target.svg') no-repeat;
-			// display: block;
-			// width: 453px;
-			// height: 453px;
-			// position:absolute;
-			
-
-		}
-		&:after{
-			// content: '';
-			// background: url('../img/About/about_arrow.svg') no-repeat;
-			// display: block;
-			// width: 8px;
-			// height: 129px;
-			// position:absolute;
-			// bottom:-182px;
-			// left: 220px;
-		}
+	/* .about__block */
+	&__block {
 	}
-		/* .about__block-top */
-		&__block-top {
-		// margin: 0 0 210px 0;
-		// position:relative;
-		&:before{
-			// bottom: -80px;
-
-		}
+	&__block_top,
+	&__block_middle,
+	&__block_bottom{
 		
+	}
+	/* .about__block-inner */
+	&__block-inner {
+	}
+	/* .about__block-svg */
+	&__block-svg {
+		width: 330px;
+	}
+	/* .about__block-svg_top */
+	&__block-svg_top {
+	}
+	/* .about__block-inner_top */
+	&__block-inner_top {
+	}
+	/* .about__block-svg_middle */
+	&__block-svg_middle {
+	}
+	/* .about__block-inner_middle */
+	&__block-inner_middle {
+	}
+	/* .about__block-svg_bottom */
+	&__block-svg_bottom {
+	}
+	/* .about__block-inner_bottom */
+	&__block-inner_bottom {
+	}
+	//СТРЕЛКИ
+	/* .about__block-arrow */
+	&__block-arrow {
+	}
+	/* .about__block-arrow_top */
+	&__block-arrow_top {
+		top: 175px;
+		left: 163px;
+		height: 100px;
+	}
+	/* .about__block-arrow_middle */
+	&__block-arrow_middle {
+		top: 130px;
+		left: 163px;
+		height: 100px;
+	}
+	/* .about__block-top */
+	&__block-top {
 	}
 	/* .about__block-middle */
 	&__block-middle {
-		// margin: 0 0 210px 0;
-		// position:relative;
-		&:before{
-			// bottom: -75px;
-			// background: url('../img/About/about_ellipse_target.svg') no-repeat;
-			// height: 305px;
-		}
 	}
 	/* .about__block-bottom */
 	&__block-bottom {
-		// position:relative;
-		&:before{
-			// top: -55px;
-		}
-		&:after{
-			// display: none;
-			
-		}
 	}
 }
-
 }
 @media (max-width: 450px){
 	.about {
