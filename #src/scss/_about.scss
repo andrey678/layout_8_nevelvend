@@ -448,6 +448,82 @@
 	}
 }
 }
+@media (max-width: 1366px) {
+	.about {
+	/* .about__inner */
+	&__inner {
+	}
+	/* .about__block-title */
+	&__block-title {
+		font-size: 52px;
+		line-height: 64px;
+	}
+	/* .about__block-text */
+	&__block-text {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	//GENERAL STYLES FOR ARROWS AND TARGETS
+	/* .about__block */
+	&__block {
+	}
+	&__block_top,
+	&__block_middle,
+	&__block_bottom{
+		
+	}
+	/* .about__block-inner */
+	&__block-inner {
+	}
+	/* .about__block-svg */
+	&__block-svg {
+		width: 330px;
+	}
+	/* .about__block-svg_top */
+	&__block-svg_top {
+	}
+	/* .about__block-inner_top */
+	&__block-inner_top {
+	}
+	/* .about__block-svg_middle */
+	&__block-svg_middle {
+	}
+	/* .about__block-inner_middle */
+	&__block-inner_middle {
+	}
+	/* .about__block-svg_bottom */
+	&__block-svg_bottom {
+	}
+	/* .about__block-inner_bottom */
+	&__block-inner_bottom {
+	}
+	//СТРЕЛКИ
+	/* .about__block-arrow */
+	&__block-arrow {
+	}
+	/* .about__block-arrow_top */
+	&__block-arrow_top {
+		top: 157px;
+		left: 163px;
+		height: 70px;
+	}
+	/* .about__block-arrow_middle */
+	&__block-arrow_middle {
+		top: 112px;
+		left: 163px;
+		height: 70px;
+	}
+	/* .about__block-top */
+	&__block-top {
+	}
+	/* .about__block-middle */
+	&__block-middle {
+	}
+	/* .about__block-bottom */
+	&__block-bottom {
+	}
+}
+}
 @media (max-width: 450px){
 	.about {
 		background:  url('../img/About/about_bg.png') 0 0 / 0% no-repeat, #2E2E2E;
